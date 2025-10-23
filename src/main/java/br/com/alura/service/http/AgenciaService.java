@@ -14,7 +14,7 @@ import java.util.List;
 @ApplicationScoped  // significa que outro recurso vai injetá-la via CDI.
 public class AgenciaService {
 
-    @RestClient // informa que é um recurso que vai ser injetado.
+    @RestClient // informa que é um recurso cliente REST que vai ser injetado.
     private SituacaoCadastralHttpService situacaoCadastralHttpService;
 
     private List<Agencia> agencias = new ArrayList<>();
